@@ -11,8 +11,8 @@ function NewTaskForm({ categories, onTaskFormSubmit }) {
       category,
     };
     onTaskFormSubmit(newTask);
-    setText("");
-    setCategory(categories[0]);
+    setText("");  // Reset the text input after submission
+    setCategory(categories[0]);  // Reset the category to the first one in the list
   }
 
   return (
