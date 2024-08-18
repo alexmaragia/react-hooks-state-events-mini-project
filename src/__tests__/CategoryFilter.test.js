@@ -5,7 +5,7 @@ import App from "../components/App";
 import { CATEGORIES } from "../data";
 
 test("displays a button for each category", () => {
-  render(<CategoryFilter categories={CATEGORIES} />);
+  render(<CategoryFilter categories={CATEGORIES} selectedCategory="All" onSelectCategory={() => {}} />);
   for (const category of CATEGORIES) {
     expect(screen.queryByText(category)).toBeInTheDocument();
   }
